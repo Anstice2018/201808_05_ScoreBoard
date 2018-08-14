@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourtCounterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_TeamName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="隊名"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tv_TeamScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textSize="56sp" />
+
+        <Button
+            android:id="@+id/btn_3Points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+
+            android:text="+3 分球"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_2Points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+
+            android:text="+2 分球"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_FreeThrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+
+            android:text="罰球"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+
+</FrameLayout>

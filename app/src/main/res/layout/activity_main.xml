@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <fragment
+            android:name="com.example.android.scoreboard.CourtCounterFragment"
+            android:id="@+id/frag_TeamA"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_court_counter" />
+
+        <!-- 中間分隔直線-->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <fragment android:name="com.example.android.scoreboard.CourtCounterFragment"
+            android:id="@+id/frag_TeamB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_court_counter" />
+
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重置"
+        android:onClick="clickReset"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
