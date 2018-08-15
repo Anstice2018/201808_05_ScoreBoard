@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-
+            android:onClick="click3Points"
             android:text="+3 分球"
             android:textColor="@android:color/white"/>
 
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-
+            android:onClick="click2Points"
             android:text="+2 分球"
             android:textColor="@android:color/white"/>
 
@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-
+            android:onClick="clickFree"
             android:text="罰球"
             android:textColor="@android:color/white"/>
     </LinearLayout>
