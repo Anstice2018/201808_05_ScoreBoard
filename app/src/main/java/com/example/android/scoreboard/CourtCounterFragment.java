@@ -71,7 +71,7 @@ public class CourtCounterFragment extends Fragment
                 mScore += 3;
                 break;
             case R.id.btn_2Points:
-                mScore +=2;
+                mScore += 2;
                 break;
             case R.id.btn_FreeThrow:
                 mScore += 1;
